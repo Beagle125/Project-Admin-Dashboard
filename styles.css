@@ -12,6 +12,7 @@ html, body {
     width: 100vw;
 }
 
+
 .sidebar-container{
     background-color: aqua;
     grid-row: 1 / 4;
