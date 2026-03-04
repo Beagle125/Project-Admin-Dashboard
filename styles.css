@@ -13,18 +13,18 @@ html, body {
 }
 
 
+
 .sidebar-container{
     background-color: aqua;
-    display: grid;
-    gap: 10px;
     grid-row: 1 / 4;
-    grid-template-rows: 1fr 3fr 2fr;
-
 }
 
 .sidebar-content{
     display: flex;
 }
+
+
+
 
 .navbar-container{
     background-color: aquamarine;
