@@ -23,8 +23,32 @@ html, body {
 
 .sidebar-upper{
     background-color: azure;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
 }
 
+.sidebar-header{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    justify-items: start;
+    align-items: center;
+}
+
+.sidebar-top{
+    background-color: cadetblue;
+}
+
+.sidebar-content{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    justify-items: start;
+    align-items: center;
+}
+
+.sidebar-bottom{
+    background-color: azure;
+}
 
 .navbar-container{
     background-color: aquamarine;
