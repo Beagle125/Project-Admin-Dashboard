@@ -24,26 +24,44 @@ html, body {
 .sidebar-upper{
     background-color: azure;
     display: grid;
-    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-rows: 1fr 4fr 2fr;
 }
 
 .sidebar-header{
+    align-items: stretch;
     background-color: bisque;
     display: grid;
+    gap: 10px;
     grid-template-columns: 50px 1fr;
-    justify-items: start;
-    align-items: center;
+    justify-items: center;
 }
 
 .sidebar-top{
+    align-items: stretch;
     background-color: cadetblue;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: start;
+}
+
+.sidebar-bottom{
+    align-items: stretch;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: start;
 }
 
 .sidebar-content{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    justify-items: start;
     align-items: center;
+    border: solid black;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: 40px;
+    justify-items: start;
+    padding-left: 10px;
+    width: 100%;
 }
 
 .sidebar-bottom{
