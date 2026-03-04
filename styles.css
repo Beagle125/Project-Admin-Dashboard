@@ -1,20 +1,36 @@
+html, body {
+    margin: 0; /* Remove default browser margins */
+    padding: 0;
+}
+
 .master-container{
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 6fr;
+    height: 100vh;
+    width: 100vw;
 }
 
 .sidebar-container{
     background-color: aqua;
+    grid-row: 1 / 4;
 }
 
 .navbar-container{
     background-color: aquamarine;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .greet-container{
     background-color: coral;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .board-container{
     background-color: aliceblue;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }
