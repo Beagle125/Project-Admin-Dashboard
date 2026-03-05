@@ -24,6 +24,7 @@ html, body {
 .sidebar-upper{
     background-color: azure;
     display: grid;
+    gap: 30px;
     grid-template-rows: 1fr 4fr 2fr;
 }
 
