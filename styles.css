@@ -106,8 +106,14 @@ form>input{
 
 .greet-container{
     background-color: coral;
+    display: grid;
     grid-column: 2 / 3;
+    grid-template-columns: 6fr 4fr;
     grid-row: 2 / 3;
+}
+
+.greet-section-name{
+    background-color: cornsilk;
 }
 
 .board-container{
