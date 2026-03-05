@@ -127,6 +127,20 @@ form>input{
     font-size: 24px;
 }
 
+.greet-section-buttons{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.greet-section-buttons>button{
+    border: none;
+    border-radius: 20px;
+    background-color: lightblue;
+    height: 35px;
+    width: 85px;
+}
+
 
 .board-container{
     background-color: aliceblue;
