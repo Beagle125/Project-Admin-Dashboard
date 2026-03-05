@@ -113,8 +113,17 @@ form>input{
 }
 
 .greet-section-name{
+    align-items: center;
     background-color: cornsilk;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
+
+.greet-actual-text{
+    background-color: chocolate;
+}
+
+
 
 .board-container{
     background-color: aliceblue;
