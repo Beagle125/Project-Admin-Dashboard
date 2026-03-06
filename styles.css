@@ -34,8 +34,13 @@ html, body {
     background-color: bisque;
     display: grid;
     gap: 10px;
-    grid-template-columns: 50px 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 5fr;
+    justify-items: stretch;
+    padding-right: 12px;
+}
+
+.sidebar-header>h2{
+    align-self: center;
 }
 
 .sidebar-top{
@@ -59,7 +64,7 @@ html, body {
     border: solid black;
     display: grid;
     gap: 10px;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 40px;
     justify-items: start;
     width: 100%;
@@ -85,7 +90,7 @@ html, body {
     background-color: pink;
     display: grid;
     gap: 8px;
-    grid-template-columns: 30px 3fr;
+    grid-template-columns: 1fr 10fr;
 }
 
 form>input{
@@ -98,7 +103,7 @@ form>input{
     align-items: center;
     display: grid;
     gap: 8px;
-    grid-template-columns:  30px 50px 3fr;
+    grid-template-columns:  1fr 2fr 5fr;
     justify-items: start;
 }
 
@@ -169,7 +174,7 @@ form>input{
     display: grid;
     gap: 20px;
     grid-row: 2 / 3;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
 }
 
 .board-project-item{
@@ -194,6 +199,8 @@ form>input{
     grid-column: 2 / 3;
     grid-template-rows: 1fr 6fr 6fr;
     height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .board-right>h4{
@@ -209,6 +216,8 @@ form>input{
     font-size: 12px;
     grid-template-rows: repeat(3, 1fr);
     height: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .board-right-upper-item{
@@ -234,6 +243,6 @@ form>input{
 .board-right-lower-item{
     align-items: center;
     display: grid;
-    grid-template-columns: 50px 5fr;
+    grid-template-columns: 1fr 5fr;
 }
 
