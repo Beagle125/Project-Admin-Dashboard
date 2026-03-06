@@ -6,7 +6,7 @@ html, body {
 .master-container{
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 2fr 10fr;
     height: 100vh;
     width: 100vw;
@@ -143,8 +143,17 @@ form>input{
 }
 
 
+
 .board-container{
     background-color: aliceblue;
+    display: grid;
     grid-column: 2 / 3;
+    grid-template-columns: 3fr 1fr;
     grid-row: 3 / 4;
+}
+
+.board-left{
+    background-color: salmon;
+    display: grid;
+    grid-column: 1 / 2;
 }
