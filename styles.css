@@ -33,7 +33,6 @@ html, body {
     align-items: stretch;
     background-color: bisque;
     display: grid;
-    gap: 10px;
     grid-template-columns: 1fr 5fr;
     justify-items: stretch;
     padding-right: 12px;
@@ -79,17 +78,16 @@ html, body {
 .navbar-container{
     background-color: aquamarine;
     display: grid;
-    gap: 12px;
     grid-column: 2 / 3;
     grid-template-columns: 4fr 2fr;
     grid-row: 1 / 2;
+    width: 100%;
 }
 
 .navbar-section-search{
     align-items: center;
     background-color: pink;
     display: grid;
-    gap: 8px;
     grid-template-columns: 1fr 10fr;
 }
 
@@ -102,7 +100,6 @@ form>input{
 .navbar-section-buttons{
     align-items: center;
     display: grid;
-    gap: 8px;
     grid-template-columns:  1fr 2fr 5fr;
     justify-items: start;
 }
@@ -116,6 +113,7 @@ form>input{
     grid-column: 2 / 3;
     grid-template-columns: 6fr 4fr;
     grid-row: 2 / 3;
+    width: 100%;
 }
 
 .greet-section-name{
@@ -144,7 +142,7 @@ form>input{
     border-radius: 20px;
     background-color: lightblue;
     height: 35px;
-    width: 85px;
+    width: 20%;
 }
 
 
@@ -174,7 +172,7 @@ form>input{
     display: grid;
     gap: 20px;
     grid-row: 2 / 3;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .board-project-item{
