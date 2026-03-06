@@ -157,6 +157,7 @@ form>input{
     display: grid;
     grid-column: 1 / 2;
     grid-template-rows: 1fr 12fr;
+    height: 100%;
     padding-left: 12px;
     padding-bottom: 12px;
 }
@@ -189,4 +190,18 @@ form>input{
     display: flex;
     grid-row: 3 / 4;
     justify-content: flex-end;
+}
+
+.board-right{
+    background-color: burlywood;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-template-rows: 1fr 12fr;
+    height: 100%;
+    padding-left: 12px;
+}
+
+.board-right>h4{
+    align-self: end;
+    padding-left: 12px;
 }
