@@ -19,6 +19,7 @@ html, body {
     display: grid;
     grid-row: 1 / 4;
     grid-template-rows: 2fr 1fr;
+    height: 100%;
 }
 
 .sidebar-upper{
@@ -159,7 +160,6 @@ form>input{
     grid-template-rows: 1fr 12fr;
     height: 100%;
     padding-left: 12px;
-    padding-bottom: 12px;
 }
 
 .board-left>h4{
@@ -196,12 +196,35 @@ form>input{
     background-color: burlywood;
     display: grid;
     grid-column: 2 / 3;
-    grid-template-rows: 1fr 12fr;
+    grid-template-rows: 1fr 6fr 6fr;
     height: 100%;
     padding-left: 12px;
+    padding-right: 12px;
 }
 
 .board-right>h4{
     align-self: end;
     padding-left: 12px;
+}
+
+.board-right-upper-modal{
+    align-items: center;
+    background-color: azure;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: grid;
+    font-size: 12px;
+    grid-template-rows: repeat(3, 1fr);
+    height: 95%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.board-right-upper-item{
+    display: grid;
+    grid-template-rows: 25px 8fr;
+}
+
+.board-right-upper-item>h5{
+    align-self: start;
 }
