@@ -155,11 +155,15 @@ form>input{
 .board-left{
     background-color: paleturquoise;
     display: grid;
-    gap: 12px;
     grid-column: 1 / 2;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 1fr 12fr;
     padding-left: 12px;
     padding-bottom: 12px;
+}
+
+.board-left>h4{
+    align-self: end;
+    padding-left: 12px;
 }
 
 .board-projects{
@@ -173,8 +177,12 @@ form>input{
 .board-project-item{
     background-color: seagreen;
     border-radius: 10px;
+    box-shadow: -8px 0px red;
+    box-sizing: border-box;
     display: grid;
-    grid-template-rows: 1fr 3fr 50px;
+    grid-template-rows: 30px 3fr 50px;
+    height: 250px;
+    padding-left: 12px;
 }
 
 .board-project-item-image-section{
