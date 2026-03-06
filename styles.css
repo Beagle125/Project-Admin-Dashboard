@@ -153,7 +153,32 @@ form>input{
 }
 
 .board-left{
-    background-color: salmon;
+    background-color: paleturquoise;
     display: grid;
+    gap: 12px;
     grid-column: 1 / 2;
+    grid-template-rows: 1fr 9fr;
+    padding-left: 12px;
+    padding-bottom: 12px;
+}
+
+.board-projects{
+    background-color: sandybrown;
+    display: grid;
+    gap: 20px;
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.board-project-item{
+    background-color: seagreen;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 50px;
+}
+
+.board-project-item-image-section{
+    display: flex;
+    grid-row: 3 / 4;
+    justify-content: flex-end;
 }
