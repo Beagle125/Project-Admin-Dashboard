@@ -5,6 +5,7 @@ html, body {
     --bg-color-blue-hovered: rgb(23, 95, 158);
     --bg-color-dark-gray: rgb(219, 219, 219);
     --bg-color-light-gray: rgb(245, 245, 245);
+    --bg-color-yellow: rgb(255, 188, 3);
 }
 
 .master-container{
@@ -155,7 +156,7 @@ form>input{
 
 
 .board-container{
-    background-color: aliceblue;
+    background-color: var(--bg-color-dark-gray);
     display: grid;
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
@@ -164,7 +165,6 @@ form>input{
 }
 
 .board-left{
-    background-color: paleturquoise;
     display: grid;
     grid-column: 1 / 2;
     grid-template-rows: 1fr 12fr;
@@ -176,7 +176,6 @@ form>input{
 }
 
 .board-projects{
-    background-color: sandybrown;
     display: grid;
     gap: 20px;
     grid-row: 2 / 3;
@@ -184,9 +183,9 @@ form>input{
 }
 
 .board-project-item{
-    background-color: seagreen;
+    background-color: var(--bg-color-light-gray);
     border-radius: 10px;
-    box-shadow: -8px 0px red;
+    box-shadow: -8px 0px var(--bg-color-yellow);
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 30px 3fr 50px;
@@ -200,7 +199,6 @@ form>input{
 }
 
 .board-right{
-    background-color: burlywood;
     display: grid;
     grid-column: 2 / 3;
     grid-template-rows: 1fr 6fr 6fr;
@@ -215,7 +213,7 @@ form>input{
 
 .board-right-upper-modal{
     align-items: center;
-    background-color: azure;
+    background-color: var(--bg-color-light-gray);
     border-radius: 10px;
     box-sizing: border-box;
     display: grid;
@@ -237,7 +235,7 @@ form>input{
 
 .board-right-lower-modal{
     align-items: center;
-    background-color: azure;
+    background-color: var(--bg-color-light-gray);
     border-radius: 10px;
     box-sizing: border-box;
     display: grid;
