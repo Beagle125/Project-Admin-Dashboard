@@ -86,7 +86,12 @@ html, body {
 .navbar-section-search{
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 1fr 12fr;
+}
+
+.navbar-section-search>img{
+    justify-self: center;
+    height: 30%;
 }
 
 form>input{
