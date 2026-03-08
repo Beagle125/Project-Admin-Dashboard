@@ -116,7 +116,7 @@ form>input{
 
 
 .greet-container{
-    background-color: coral;
+    background-color: var(--bg-color-light-gray);
     display: grid;
     grid-column: 2 / 3;
     grid-template-columns: 6fr 4fr;
@@ -126,17 +126,13 @@ form>input{
 
 .greet-section-name{
     align-items: center;
-    background-color: cornsilk;
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
 
-.greet-actual-text{
-    background-color: chocolate;
-}
-
 .greet-h2{
     font-size: 24px;
+    font-weight: bold;
 }
 
 .greet-section-buttons{
@@ -148,7 +144,8 @@ form>input{
 .greet-section-buttons>button{
     border: none;
     border-radius: 20px;
-    background-color: lightblue;
+    background-color: var(--bg-color-blue);
+    color: white;
     height: 35px;
     width: 20%;
 }
