@@ -194,8 +194,14 @@ form>input{
 
 .board-project-item-image-section{
     display: flex;
+    gap: 6px;
     grid-row: 3 / 4;
     justify-content: flex-end;
+}
+
+.board-project-item-image-section>img{
+    filter: brightness(1);
+    transition: filter 0.3s ease;
 }
 
 .board-right{
@@ -257,8 +263,6 @@ form>input{
     filter: brightness(0) invert(1);
 }
 
-
-
 .sidebar-content.hover:hover{
     filter: brightness(0.7);
     background-color: var(--bg-color-blue-hovered);
@@ -266,4 +270,9 @@ form>input{
 
 .greet-section-buttons>button:hover{
     filter: brightness(0.7);
+}
+
+.board-project-item-image-section>img:hover{
+    filter: brightness(0.5);
+    background-color: var(--bg-color-dark-gray);
 }
