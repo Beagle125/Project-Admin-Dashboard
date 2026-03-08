@@ -1,7 +1,8 @@
 html, body {
     margin: 0; /* Remove default browser margins */
     padding: 0;
-    --bg-color-blue: blue;
+    --bg-color-blue: rgb(38, 139, 228);
+    --bg-color-blue-hovered: rgb(23, 95, 158);
 }
 
 .master-container{
@@ -15,7 +16,7 @@ html, body {
 
 
 .sidebar-container{
-    background-color: aqua;
+    background-color: var(--bg-color-blue);
     color: white;
     display: grid;
     grid-row: 1 / 4;
@@ -25,7 +26,6 @@ html, body {
 }
 
 .sidebar-upper{
-    background-color: azure;
     display: grid;
     gap: 30px;
     grid-template-rows: 1fr 4fr 2fr;
@@ -33,7 +33,6 @@ html, body {
 
 .sidebar-header{
     align-items: stretch;
-    background-color: bisque;
     display: grid;
     grid-template-columns: 1fr 5fr;
     justify-items: stretch;
@@ -46,7 +45,6 @@ html, body {
 
 .sidebar-top{
     align-items: stretch;
-    background-color: cadetblue;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     justify-items: start;
@@ -54,7 +52,6 @@ html, body {
 
 .sidebar-bottom{
     align-items: stretch;
-    background-color: cadetblue;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     justify-items: start;
@@ -63,22 +60,18 @@ html, body {
 .sidebar-content{
     align-items: center;
     display: grid;
+    filter: brightness(1);
     gap: 10px;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 40px;
     justify-items: start;
+    transition: filter 0.3s ease;
     width: 100%;
 }
 
-.sidebar-content>img,
-.sidebar-header>img{
-    filter: brightness(0) invert(1);
+.sidebar-content:hover{
+    filter: brightness(0.2);
 }
-
-.sidebar-bottom{
-    background-color: azure;
-}
-
 
 
 .navbar-container{
@@ -159,6 +152,7 @@ form>input{
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
     grid-row: 3 / 4;
+    padding-left: 12px;
 }
 
 .board-left{
@@ -250,3 +244,9 @@ form>input{
     grid-template-columns: 1fr 5fr;
 }
 
+
+
+.sidebar-content>img,
+.sidebar-header>img{
+    filter: brightness(0) invert(1);
+}
