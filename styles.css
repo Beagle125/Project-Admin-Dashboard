@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     --bg-color-blue: rgb(38, 139, 228);
     --bg-color-blue-hovered: rgb(23, 95, 158);
+    --bg-color-dark-gray: rgb(219, 219, 219);
+    --bg-color-light-gray: rgb(245, 245, 245);
 }
 
 .master-container{
@@ -73,7 +75,7 @@ html, body {
 
 
 .navbar-container{
-    background-color: aquamarine;
+    background-color: var(--bg-color-light-gray);
     display: grid;
     grid-column: 2 / 3;
     grid-template-columns: 4fr 2fr;
@@ -83,14 +85,15 @@ html, body {
 
 .navbar-section-search{
     align-items: center;
-    background-color: pink;
     display: grid;
     grid-template-columns: 1fr 10fr;
 }
 
 form>input{
+    background-color: var(--bg-color-dark-gray);
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
+    height: 25px;
     width: 89%;
 }
 
@@ -248,7 +251,6 @@ form>input{
 .sidebar-header>img{
     filter: brightness(0) invert(1);
 }
-
 
 
 
