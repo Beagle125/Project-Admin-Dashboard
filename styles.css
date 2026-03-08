@@ -161,7 +161,7 @@ form>input{
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
     grid-row: 3 / 4;
-    padding-left: 12px;
+    padding-left: 50px;
 }
 
 .board-left{
@@ -179,7 +179,7 @@ form>input{
     display: grid;
     gap: 20px;
     grid-row: 2 / 3;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 }
 
 .board-project-item{
