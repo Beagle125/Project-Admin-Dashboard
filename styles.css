@@ -109,6 +109,9 @@ form>input{
     justify-items: start;
 }
 
+.navbar-section-buttons>img:first-of-type{
+    height: 30%;
+}
 
 
 
