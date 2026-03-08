@@ -118,11 +118,13 @@ form>input{
 
 .greet-container{
     background-color: var(--bg-color-light-gray);
+    box-shadow: 0px 3px 5px black;
     display: grid;
     grid-column: 2 / 3;
     grid-template-columns: 6fr 4fr;
     grid-row: 2 / 3;
     width: 100%;
+    z-index: 10;
 }
 
 .greet-section-name{
@@ -162,6 +164,7 @@ form>input{
     grid-template-columns: 3fr 1fr;
     grid-row: 3 / 4;
     padding-left: 50px;
+    z-index: 5;
 }
 
 .board-left{
@@ -185,7 +188,7 @@ form>input{
 .board-project-item{
     background-color: var(--bg-color-light-gray);
     border-radius: 10px;
-    box-shadow: -8px 0px var(--bg-color-yellow);
+    box-shadow: -8px 0px var(--bg-color-yellow), 3px 3px 5px black;
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 30px 3fr 50px;
@@ -200,6 +203,7 @@ form>input{
 }
 
 .board-project-item-image-section>img{
+    border-radius: 100px;
     filter: brightness(1);
     transition: filter 0.3s ease;
 }
@@ -221,6 +225,7 @@ form>input{
     align-items: center;
     background-color: var(--bg-color-light-gray);
     border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
     box-sizing: border-box;
     display: grid;
     font-size: 12px;
@@ -243,6 +248,7 @@ form>input{
     align-items: center;
     background-color: var(--bg-color-light-gray);
     border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
     box-sizing: border-box;
     display: grid;
     font-size: 12px;
