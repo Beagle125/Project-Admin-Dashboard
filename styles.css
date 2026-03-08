@@ -1,6 +1,7 @@
 html, body {
     margin: 0; /* Remove default browser margins */
     padding: 0;
+    --bg-color-blue: blue;
 }
 
 .master-container{
@@ -15,10 +16,12 @@ html, body {
 
 .sidebar-container{
     background-color: aqua;
+    color: white;
     display: grid;
     grid-row: 1 / 4;
     grid-template-rows: 2fr 1fr;
     height: 100%;
+    padding-left: 10px;
 }
 
 .sidebar-upper{
@@ -59,13 +62,17 @@ html, body {
 
 .sidebar-content{
     align-items: center;
-    border: solid black;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 40px;
     justify-items: start;
     width: 100%;
+}
+
+.sidebar-content>img,
+.sidebar-header>img{
+    filter: brightness(0) invert(1);
 }
 
 .sidebar-bottom{
