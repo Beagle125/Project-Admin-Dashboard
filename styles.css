@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html, body {
     margin: 0; /* Remove default browser margins */
     padding: 0;
@@ -5,12 +14,13 @@ html, body {
     --bg-color-blue-hovered: rgb(23, 95, 158);
     --bg-color-dark-gray: rgb(219, 219, 219);
     --bg-color-light-gray: rgb(245, 245, 245);
-    --bg-color-yellow: rgb(255, 188, 3);
+    --bg-color-yellow: rgb(255, 188, 3);;
 }
 
 .master-container{
     box-sizing: border-box;
     display: grid;
+    font-family: 'Roboto', sans-serif;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 2fr 10fr;
     height: 100vh;
@@ -127,6 +137,8 @@ form>input{
     grid-column: 2 / 3;
     grid-template-columns: 6fr 4fr;
     grid-row: 2 / 3;
+    padding-bottom: 10px;
+    padding-top: 10px;
     width: 100%;
     z-index: 10;
 }
@@ -202,6 +214,7 @@ form>input{
     display: grid;
     grid-template-rows: 30px 3fr 50px;
     height: 250px;
+    padding-left: 16px;
 }
 
 .board-project-item-image-section{
