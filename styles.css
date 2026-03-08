@@ -110,6 +110,10 @@ form>input{
     justify-items: start;
 }
 
+.navbar-section-buttons>img{
+    justify-self: center;
+}
+
 .navbar-section-buttons>img:first-of-type{
     height: 30%;
 }
@@ -131,6 +135,11 @@ form>input{
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 5fr;
+}
+
+.greet-section-name>img{
+    justify-self: center;
+    height: 100%;
 }
 
 .greet-h2{
